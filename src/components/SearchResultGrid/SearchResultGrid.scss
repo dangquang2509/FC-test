@@ -1,0 +1,33 @@
+@import 'src/sass/common';
+
+.search-item-grid {
+    padding: 24px 0;
+    flex: 1 0 20%;
+    margin: 4px;
+
+    .poster {
+        height: auto;
+        height: 400px;
+    }
+
+    .info {
+        margin-top: 12px;
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary-text;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:visited {
+                text-decoration: none;
+            }
+        }
+
+        .desc {
+            margin-top: 8px;
+            color: $secondary-text;
+        }
+    }
+}

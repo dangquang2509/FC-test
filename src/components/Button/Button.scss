@@ -1,0 +1,19 @@
+@import 'src/sass/common';
+
+.btn-wrapper {
+    text-align: center;
+
+    .btn {
+        width: 250px;
+        background-color: $primary-bg;
+        color: $secondary-text;
+        border: 1px solid $secondary-text;
+        padding: 14px;
+        border-radius: 6px;
+        cursor: pointer;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}

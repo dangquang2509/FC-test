@@ -1,0 +1,87 @@
+@import 'src/sass/common';
+
+.main {
+    .header-search-form {
+        display: flex;
+        width: 100%;
+        position: relative;
+        border: 2px solid $border;
+        border-radius: 4px;
+
+        .header-search-form-select {
+            -webkit-appearance: none;
+            border: none;
+            width: 200px;
+            height: 46px;
+            border-right: 2px solid $border;
+            text-transform: uppercase;
+            background-color: $primary-bg;
+            color: $primary-text;
+            padding: 10px;
+            
+
+            &:focus {
+                outline: none;
+            }
+
+            @media (max-width: 767px) {
+                width: 140px;
+            }
+        }
+
+        .header-search-form-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            background-color: $primary-bg;
+            color: $primary-text;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .icon-search {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+    }
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 0;
+        padding: 16px 0;
+        border-bottom: 1px solid $border;
+
+        .total {
+            color: $secondary-text;
+        }
+
+        .topbar-icons {
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            .topbar-icon {
+                margin-left: 10px;
+                border: 1px solid $border;
+                padding: 6px;
+                cursor: pointer;
+    
+                &.active {
+                    border: 1px solid $secondary-text;
+                }
+            }
+        }
+    }
+
+    .loading {
+        color: $primary-text;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}

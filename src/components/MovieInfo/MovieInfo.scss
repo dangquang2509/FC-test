@@ -1,0 +1,13 @@
+@import 'src/sass/common';
+
+.movie-info {
+    p {
+        font-size: 14px;
+        color: $primary-text;
+        font-weight: 600;
+    }
+
+    span {
+        color: $secondary-text;
+    }
+}

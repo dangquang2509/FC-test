@@ -1,0 +1,12 @@
+.search-results {
+    padding: 0;
+
+    &.grid-view {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search-result {
+        margin-bottom: 12px;
+    }
+}
